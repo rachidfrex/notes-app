@@ -31,7 +31,7 @@ function App() {
     const tempNotes = [...notes];
     tempNotes.push({
       text:"",
-      time:Date.now(),
+      time: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
       color,
     })
     setNotes(tempNotes)
